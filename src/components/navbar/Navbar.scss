@@ -1,0 +1,91 @@
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 20px;
+
+  .container {
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .logo {
+      text-align: center;
+
+      .logoItem {
+        text-decoration: none;
+        color: inherit;
+
+        .logoText {
+          font-size: 70px;
+          border-radius: 5px;
+          padding: 0;
+          margin: 0;
+          text-decoration: underline;
+          text-underline-offset: 15px;
+
+          span {
+            font-family: "Raleway", sans-serif;
+            font-size: 20px;
+          }
+        }
+      }
+
+      img {
+        width: 300px;
+      }
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-weight: 500;
+
+      .link {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: gray;
+        transition: all 300ms ease-in;
+
+        &::after {
+          content: "|";
+          top: 0;
+          right: 10px;
+        }
+
+        &:hover {
+          color: var(--primary-color);
+        }
+
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      button {
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid white;
+        cursor: pointer;
+        background-color: var(--cta);
+        transition: all 300ms ease;
+
+        &:hover {
+          background-color: white;
+          color: var(--cta);
+          border-color: var(--cta);
+        }
+      }
+    }
+  }
+}

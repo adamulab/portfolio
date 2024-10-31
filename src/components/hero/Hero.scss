@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  padding-top: 250px;
+
+  .container {
+    width: 1200px;
+    border-radius: 5px;
+    display: flex;
+
+    .left {
+      width: 50%;
+
+      img {
+        height: auto;
+        display: block;
+      }
+    }
+    .right {
+      width: 50%;
+      background-color: var(--sec-color);
+      padding: 30px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 10px;
+
+      p {
+        font-size: 30px;
+      }
+
+      h1 {
+        color: var(primary-color);
+        font-size: 80px;
+      }
+
+      span {
+        font-size: 20px;
+        line-height: 35px;
+      }
+    }
+  }
+}
