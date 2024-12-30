@@ -1,12 +1,14 @@
 .about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 29px;
+  min-height: 60vh;
+  padding: 100px;
 
   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .content {
       display: flex;
+      align-items: center;
       gap: 20px;
 
       .left {
@@ -18,14 +20,27 @@
 
       .right {
         flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 200px;
-        font-weight: bold;
-        border: 1px solid lightcyan;
-        border-radius: 50%;
-        background-color: var(--sec-color);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        .about-images {
+          width: 300px;
+          height: 180px;
+          // border: 1px solid var(--primary-color);
+          border-radius: 20px;
+          background-color: lightcyan;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+
+          img {
+            width: 300px;
+            height: 180px;
+            border-radius: 20px;
+          }
+        }
       }
     }
   }

@@ -1,0 +1,38 @@
+.work-process-section {
+  padding: 6rem 12rem;
+  background-color: #fff;
+
+  .work-process-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border-left: 3px solid var(--secondary-color);
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.step-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--important-text);
+  margin-right: 0.5rem;
+}
+
+.process-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.process-description {
+  font-size: 0.9rem;
+  color: #555;
+}
