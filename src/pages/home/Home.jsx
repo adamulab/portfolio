@@ -6,6 +6,7 @@ import Skills from "../../components/skills/Skills";
 import Projects from "../../components/projects/Projects";
 import Services from "../../components/services/Services";
 import WorkProcess from "../../components/work/WorkProcess";
+import Testimonial from "../../components/testimonial/Testimonial";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Projects />
       <Services />
       <WorkProcess />
+      <Testimonial />
     </div>
   );
 }

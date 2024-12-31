@@ -46,6 +46,7 @@
       display: flex;
       align-items: center;
       gap: 24px;
+      font-size: 16px;
       font-weight: 500;
 
       .link {
@@ -70,7 +71,7 @@
         }
 
         &:hover {
-          color: var(--primary-color);
+          color: var(--secondary-color);
 
           .icon {
             color: var(--secondary-color);

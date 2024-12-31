@@ -6,23 +6,23 @@
   --important-text: #0f131a;
   --normal-text: #4b5563;
   --light-color: lightcyan;
-  --cta: #f78119;
+  --gray-color: #e9e5e5;
+  --white: whitesmoke;
+  --cta-color: #f78119;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-size: 20px;
   color: var(--normal-text);
+  font-family: "Lato", serif;
 
   .link {
     text-decoration: none;
     color: inherit;
   }
-}
-
-body {
-  font-family: "Lato", serif;
 }
 
 h1,
