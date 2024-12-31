@@ -49,6 +49,13 @@ function Footer() {
         <div className="contact-container">
           <div className="contact-info">
             <div className="contact-item">
+              <FaMapMarkerAlt className="contact-icon" />
+              <p>
+                <strong>Location:</strong> Colab Innovation Campus, Barnawa,
+                Kaduna.
+              </p>
+            </div>
+            <div className="contact-item">
               <FaEnvelope className="contact-icon" />
               <p>
                 <strong>Email:</strong>{" "}
@@ -62,13 +69,6 @@ function Footer() {
               <p>
                 <strong>Phone:</strong>{" "}
                 <a href="tel:+2349022624051">+234 902 262 4051</a>
-              </p>
-            </div>
-            <div className="contact-item">
-              <FaMapMarkerAlt className="contact-icon" />
-              <p>
-                <strong>Location:</strong> Colab Innovation Campus, Barnawa,
-                Kaduna, Nigeria
               </p>
             </div>
           </div>

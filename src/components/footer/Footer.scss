@@ -22,8 +22,11 @@
 
         .contact-icon {
           font-size: 1.5rem;
-          color: #0078d7;
+          color: var(--secondary-color);
           margin-right: 1rem;
+          border: 1px solid var(--secondary-color);
+          padding: 5px;
+          border-radius: 50%;
         }
 
         p {
