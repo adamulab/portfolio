@@ -45,7 +45,7 @@ function Navbar() {
             <FaMapLocation className="icon" />
             Contact
           </Link>
-          <button>Join</button>
+          {/* <button>Join</button> */}
         </div>
       </div>
     </div>
