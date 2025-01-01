@@ -22,12 +22,12 @@
 
       &.active {
         background-color: var(--secondary-color);
-        color: #fff;
+        color: var(--light-color);
       }
 
       &:hover {
-        background-color: var(--gray-color);
-        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        color: var(--light-color);
       }
     }
   }
