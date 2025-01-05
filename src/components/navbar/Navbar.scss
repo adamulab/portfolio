@@ -68,6 +68,7 @@
           top: 0;
           right: 10px;
           font-weight: bold;
+          color: var(--secondary-color);
         }
 
         &:hover {
@@ -100,5 +101,29 @@
         }
       }
     }
+
+    .hamburger {
+      display: none;
+      font-size: 24px;
+      color: var(--important-text);
+      cursor: pointer;
+      transition: all 300ms ease;
+
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
   }
+}
+
+/* Media Query for Tablets (768px to 1024px) */
+@media screen and (max-width: 1024px) {
+}
+
+/* Media Query for Mobile Devices (up to 768px) */
+@media screen and (max-width: 768px) {
+}
+
+/* Media Query for Extra Small Devices (up to 480px) */
+@media screen and (max-width: 480px) {
 }

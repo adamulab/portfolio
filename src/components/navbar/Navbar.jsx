@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
-import { FaHome, FaProjectDiagram, FaUser } from "react-icons/fa";
+import {
+  FaHome,
+  FaProjectDiagram,
+  FaUser,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
 import { FaMapLocation } from "react-icons/fa6";
 
 function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="navbar">
       <div className="container">
@@ -16,36 +28,46 @@ function Navbar() {
             {/* <img src={Logo} alt="Logo" /> */}
           </Link>
         </div>
-        <div className="menu">
-          <Link className="link" to={"/"}>
+
+        {/* Hamburger Menu Icon */}
+        <div className="hamburger" onClick={toggleMenu}>
+          {isMenuOpen ? (
+            <FaTimes className="hamburgerIcon" />
+          ) : (
+            <FaBars className="hamburgerIcon" />
+          )}
+        </div>
+
+        {/* Menu Links */}
+        <div className={`menu ${isMenuOpen ? "menuOpen" : ""}`}>
+          <Link className="link" to={"/"} onClick={() => setIsMenuOpen(false)}>
             <FaHome className="icon" />
             Home
           </Link>
-          <Link className="link" to={"/about"}>
+          <Link
+            className="link"
+            to={"/about"}
+            onClick={() => setIsMenuOpen(false)}
+          >
             <FaUser className="icon" />
             About
           </Link>
-          {/* <Link className="link" to={"/courses"}>
-            <img src={Courses} alt="CourseIcon" />
-            Courses
-          </Link>
-          <Link className="link" to={"/blog"}>
-            <img src={Blog} alt="BlogIcon" />
-            Blog
-          </Link> */}
-          <Link className="link" to={"/projects"}>
+          <Link
+            className="link"
+            to={"/projects"}
+            onClick={() => setIsMenuOpen(false)}
+          >
             <FaProjectDiagram className="icon" />
             Projects
           </Link>
-          {/* <Link className="link" to={"/videos"}>
-            <img src={Videos} alt="VideosIcon" />
-            Videos
-          </Link> */}
-          <Link className="link" to={"/contact"}>
+          <Link
+            className="link"
+            to={"/contact"}
+            onClick={() => setIsMenuOpen(false)}
+          >
             <FaMapLocation className="icon" />
             Contact
           </Link>
-          {/* <button>Join</button> */}
         </div>
       </div>
     </div>

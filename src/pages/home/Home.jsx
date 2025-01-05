@@ -7,12 +7,14 @@ import Projects from "../../components/projects/Projects";
 import Services from "../../components/services/Services";
 import WorkProcess from "../../components/work/WorkProcess";
 import Testimonial from "../../components/testimonial/Testimonial";
+import Certificates from "../../components/certificate/Certificates";
 
 function Home() {
   return (
     <div className="home">
       <Hero />
       <About />
+      <Certificates />
       <Skills />
       <Projects />
       <Services />
