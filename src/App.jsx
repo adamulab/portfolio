@@ -6,9 +6,7 @@ import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Courses from "./pages/courses/Courses";
 import Blog from "./pages/blog/Blog";
-import Projects from "./pages/projects/Projects";
 import Videos from "./pages/videos/Videos";
-import AboutPage from "./pages/about/About";
 
 function App() {
   const Layout = () => {
@@ -30,20 +28,12 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/about",
-          element: <AboutPage />,
-        },
-        {
           path: "/courses",
           element: <Courses />,
         },
         {
           path: "/blog",
           element: <Blog />,
-        },
-        {
-          path: "/projects",
-          element: <Projects />,
         },
         {
           path: "/videos",

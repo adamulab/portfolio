@@ -12,14 +12,26 @@ function About() {
         <h1 className="sectionHeader">About Me</h1>
         <div className="content">
           <div className="left">
-            <p>I am dedicated to continuous learning and innovation</p>
             <p>
-              Leveraging modern tools and technologies to build scalable,
-              user-friendly applications.
+              I am Adamu Abubakar, a passionate and results-driven Software
+              Developer, Digital Marketer, and Digital Content Creator. With a
+              strong foundation in JavaScript and expertise in the MERN stack, I
+              build innovative and user-focused applications that solve
+              real-world problems.
             </p>
             <p>
-              My mission is to combine creativity, technical expertise, and
-              problem-solving skills to contribute to impactful projects.
+              Beyond coding, I enjoy creating engaging digital content, teaching
+              coding to beginners, and leveraging marketing strategies to drive
+              impactful results. I am committed to lifelong learning,
+              continuously enhancing my skills to deliver exceptional value to
+              clients and projects.
+            </p>
+            <p>
+              As a dedicated family person and empathic individual, I bring a
+              unique balance of technical expertise and human connection to my
+              work, always striving to make a meaningful difference. My mission
+              is to combine creativity, technical expertise, and problem-solving
+              skills to contribute to impactful projects.
             </p>
           </div>
           <div className="right">

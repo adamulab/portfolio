@@ -33,7 +33,7 @@
     .service-title {
       font-size: 1.2rem;
       font-weight: bold;
-      color: var(--important-text);
+      color: var(--primary-color);
       margin-bottom: 0.5rem;
     }
 
@@ -41,5 +41,28 @@
       font-size: 0.9rem;
       color: var(--normal-text);
     }
+  }
+}
+
+/* Extra small devices (phones, 0px - 575px) */
+@media (max-width: 481px) {
+  /* Styles for phones */
+  .services-section {
+    padding: 3rem 2rem;
+  }
+}
+
+/* Small devices (tablets, 576px - 767px) */
+@media (min-width: 482px) and (max-width: 862px) {
+  /* Styles for tablets in portrait mode */
+  .services-section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (min-width: 863px) and (max-width: 1200px) {
+  /* Styles for Desktop */
+  .services-section {
+    padding: 6rem 4rem;
   }
 }

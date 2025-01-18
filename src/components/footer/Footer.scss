@@ -3,76 +3,78 @@
     background-color: var(--primary-color);
     padding: 8rem 12rem;
     color: var(--light-color);
-  }
 
-  .contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-
-    .contact-info {
-      flex: 1;
-      min-width: 300px;
-
-      .contact-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
-
-        .contact-icon {
-          background-color: var(--light-color);
-          font-size: 1.5rem;
-          margin-right: 0.5rem;
-          border: 1px solid var(--light-color);
-          padding: 5px;
-          border-radius: 50%;
-        }
-
-        p {
-          font-size: 1rem;
-          color: var(--light-color);
-
-          span {
-            color: var(--light-color);
-            font-weight: bold;
-          }
-
-          a {
-            color: var(--light-color);
-            text-decoration: none;
-          }
-        }
-      }
-    }
-    .contact-form {
-      flex: 1;
-      min-width: 300px;
+    .contact-container {
       display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      gap: 2rem;
 
-      input,
-      textarea,
-      button {
-        width: 100%;
-        padding: 0.8rem;
-        border: 1px solid var(--light-color);
-        outline: none;
-        border-radius: 5px;
+      .contact-info {
+        flex: 1;
+        min-width: 300px;
+
+        .contact-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+
+          .contact-icon {
+            background-color: var(--cta-color);
+            color: var(--dark-color);
+            font-size: 1.5rem;
+            // margin-right: 0.5rem;
+            border: 1px solid var(--cta-color);
+            padding: 5px;
+            border-radius: 50%;
+          }
+
+          p {
+            font-size: 0.8rem;
+            color: var(--light-color);
+
+            span {
+              color: var(--light-color);
+              font-weight: bold;
+            }
+
+            a {
+              color: var(--light-color);
+              text-decoration: none;
+              font-size: 1rem;
+            }
+          }
+        }
       }
+      .contact-form {
+        flex: 1;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
 
-      button {
-        background-color: var(--secondary-color);
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+        input,
+        textarea,
+        button {
+          width: 100%;
+          padding: 0.8rem;
+          border: 1px solid var(--light-color);
+          outline: none;
+          border-radius: 5px;
+        }
 
-        &:hover {
-          background-color: var(--light-color);
-          color: var(--primary-color);
+        button {
+          background-color: var(--cta-color);
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+          }
         }
       }
     }
@@ -81,5 +83,48 @@
     font-size: 16px !important;
     padding: 20px;
     text-align: center;
+    color: var(--light-color);
+  }
+}
+
+/* Extra small devices (phones, 0px - 575px) */
+@media (max-width: 481px) {
+  /* Styles for phones */
+  .footer {
+    .contact-section {
+      padding: 3rem 2rem;
+
+      .contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 576px - 767px) */
+@media (min-width: 482px) and (max-width: 862px) {
+  /* Styles for tablets in portrait mode */
+  .footer {
+    .contact-section {
+      padding: 4rem 3rem;
+
+      .contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px - 991px) */
+@media (min-width: 863px) and (max-width: 1200px) {
+  /* Styles for tablets in landscape mode or small desktops */
+  .footer {
+    .contact-section {
+      padding: 6rem 4rem;
+    }
   }
 }

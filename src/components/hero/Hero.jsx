@@ -7,7 +7,6 @@ function Hero() {
     <div className="hero">
       <div className="container">
         <div className="left">
-          <div className="image-layer"></div>
           <img src={HeroImage} alt="" />
         </div>
         <div className="right">

@@ -1,14 +1,13 @@
 .navbar {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  position: fixed;
+  background-color: var(--dark-color);
+  color: var(--gray-color);
   width: 100%;
   z-index: 10;
   padding: 20px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
 
   .container {
-    width: 1400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,67 +20,41 @@
         color: inherit;
 
         .logoText {
+          color: var(--light-color);
           font-size: 25px;
-          border-radius: 5px;
           padding: 0;
           margin: 0;
-          text-decoration: underline;
-          text-underline-offset: 8px;
 
           span {
             font-family: "Raleway", sans-serif;
             font-size: 20px;
-            color: var(--secondary-color);
-            margin-left: 3px;
+            background-color: var(--dark-color);
+            color: var(--cta-color);
           }
         }
-      }
-
-      img {
-        width: 300px;
       }
     }
 
     .menu {
       display: flex;
-      align-items: center;
-      gap: 24px;
+      gap: 20px;
       font-size: 16px;
       font-weight: 500;
 
       .link {
+        width: 100%;
         display: flex;
         align-items: center;
         gap: 5px;
         color: var(--important-text);
         transition: all 300ms ease-in;
 
-        &::after {
-          content: "}";
-          top: 0;
-          right: 10px;
-          font-weight: bold;
-        }
-
-        &::before {
-          content: "{";
-          top: 0;
-          right: 10px;
-          font-weight: bold;
-          color: var(--secondary-color);
+        .icon {
+          color: var(--cta-color);
         }
 
         &:hover {
-          color: var(--secondary-color);
-
-          .icon {
-            color: var(--secondary-color);
-          }
-        }
-
-        img {
-          width: 18px;
-          height: 18px;
+          color: var(--light-color);
         }
       }
 
@@ -91,7 +64,7 @@
         border-radius: 5px;
         border: 1px solid white;
         cursor: pointer;
-        background-color: var(--cta);
+        background-color: var(--cta-color);
         transition: all 300ms ease;
 
         &:hover {
@@ -105,25 +78,196 @@
     .hamburger {
       display: none;
       font-size: 24px;
-      color: var(--important-text);
+      color: var(--cta-color);
       cursor: pointer;
       transition: all 300ms ease;
 
       &:hover {
-        color: var(--secondary-color);
+        color: var(--gray-color);
       }
     }
   }
 }
 
-/* Media Query for Tablets (768px to 1024px) */
-@media screen and (max-width: 1024px) {
+/* Extra small devices (phones, 0px - 575px) */
+@media (max-width: 767px) {
+  /* Styles for phones */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+
+    .container {
+      width: 575px;
+
+      .logo {
+        .logoItem {
+          .logoText {
+            span {
+            }
+          }
+        }
+      }
+
+      .menu {
+        width: 60%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+
+        &.menuOpen {
+          background-color: var(--dark-color);
+          display: flex;
+          border-radius: 10px;
+        }
+
+        .link {
+          font-size: 18px;
+          padding: 10px 20px;
+
+          &:hover {
+            background-color: var(--cta-color);
+            color: var(--dark-color);
+
+            .icon {
+              color: var(--dark-color);
+            }
+          }
+        }
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 24px;
+        color: var(--important-text);
+        cursor: pointer;
+        transition: all 300ms ease;
+
+        &:hover {
+          color: var(--secondary-color);
+        }
+      }
+    }
+  }
 }
 
-/* Media Query for Mobile Devices (up to 768px) */
-@media screen and (max-width: 768px) {
-}
+// .navbar {
+//     background-color: white;
+//     display: flex;
+//     justify-content: center;
+//     position: fixed;
+//     width: 100%;
+//     z-index: 10;
+//     padding: 20px;
+//     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
 
-/* Media Query for Extra Small Devices (up to 480px) */
-@media screen and (max-width: 480px) {
-}
+//     .container {
+//       width: 1400px;
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+
+//       .logo {
+//         text-align: center;
+
+//         .logoItem {
+//           text-decoration: none;
+//           color: inherit;
+
+//           .logoText {
+//             color: var(--secondary-color);
+//             font-size: 25px;
+//             border-radius: 5px;
+//             padding: 0;
+//             margin: 0;
+
+//             span {
+//               font-family: "Raleway", sans-serif;
+//               font-size: 20px;
+//               color: var(--primary-color);
+//               margin-left: 3px;
+//             }
+//           }
+//         }
+
+//         img {
+//           width: 300px;
+//         }
+//       }
+
+//       .menu {
+//         display: flex;
+//         align-items: center;
+//         gap: 24px;
+//         font-size: 16px;
+//         font-weight: 500;
+
+//         .link {
+//           color: var(--important-text);
+//           transition: all 300ms ease-in;
+
+//           &::after {
+//             content: "}";
+//             top: 0;
+//             right: 10px;
+//             font-weight: bold;
+//           }
+
+//           &::before {
+//             content: "{";
+//             top: 0;
+//             right: 10px;
+//             font-weight: bold;
+//             color: var(--primary-color);
+//           }
+
+//           &:hover {
+//             color: var(--secondary-color);
+
+//             .icon {
+//               color: var(--cta-color);
+//             }
+//           }
+
+//           img {
+//             width: 18px;
+//             height: 18px;
+//           }
+//         }
+
+//         button {
+//           color: white;
+//           padding: 10px 20px;
+//           border-radius: 5px;
+//           border: 1px solid white;
+//           cursor: pointer;
+//           background-color: var(--cta);
+//           transition: all 300ms ease;
+
+//           &:hover {
+//             background-color: white;
+//             color: var(--cta);
+//             border-color: var(--cta);
+//           }
+//         }
+//       }
+
+//       .hamburger {
+//         display: none;
+//         font-size: 24px;
+//         color: var(--important-text);
+//         cursor: pointer;
+//         transition: all 300ms ease;
+
+//         &:hover {
+//           color: var(--secondary-color);
+//         }
+//       }
+//     }
+//   }

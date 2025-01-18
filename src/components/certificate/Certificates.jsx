@@ -27,6 +27,12 @@ const certificates = [
     link: "https://www.linkedin.com/learning/certificates/8e926ff18cc0aeee8ebf09b0bfb50fc86c0baa31b7bff706bdec9bf63b093b1a",
   },
   {
+    title: "English for IT 1",
+    issuer: "Cisco Networking Academy",
+    date: "July 2024",
+    link: "https://drive.google.com/file/d/1DACiC8b-xbqRlKqWv7NDll8NBiTEcVjg/view?usp=sharing",
+  },
+  {
     title:
       "Build Your Generative AI Productivity Skills with Microsoft and LinkedIn",
     issuer: "Microsoft & LinkedIn",

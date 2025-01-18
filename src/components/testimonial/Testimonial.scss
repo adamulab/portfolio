@@ -1,6 +1,6 @@
 .testimonial-section {
   padding: 8rem 12rem;
-  background-color: #f9f9f9;
+  background-color: var(--light-color);
 
   .testimonials-container {
     display: grid;
@@ -8,7 +8,8 @@
     gap: 1.5rem;
 
     .testimonial-card {
-      background: var(--light-color);
+      background: var(--dark-color);
+      color: var(--light-color);
       border: 1px solid var(--gray-colot);
       border-radius: 8px;
       padding: 1.5rem;
@@ -18,13 +19,13 @@
 
       .quote-icon {
         font-size: 1rem;
-        color: var(--secondary-color) !important;
+        color: var(--cta-color) !important;
       }
 
       .testimonial-feedback {
         font-style: italic;
         margin: 1rem 0;
-        color: var(--normal-text);
+        color: var(--gray-color);
       }
 
       .testimonial-info {
@@ -41,13 +42,38 @@
       .testimonial-name {
         font-size: 1rem;
         font-weight: bold;
-        color: var(--normal-text);
       }
 
       .testimonial-position {
         font-size: 0.9rem;
-        color: var(--secondary-color);
+        color: var(--cta-color);
       }
     }
+  }
+}
+
+/* Extra small devices (phones, 0px - 575px) */
+@media (max-width: 481px) {
+  /* Styles for phones */
+  .testimonial-section {
+    padding: 3rem 2rem;
+  }
+}
+
+/* Small devices (tablets, 576px - 767px) */
+@media (min-width: 482px) and (max-width: 862px) {
+  /* Styles for tablets in portrait mode */
+  .testimonial-section {
+    padding: 4rem 3rem;
+    background-color: var(--white);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px - 991px) */
+@media (min-width: 863px) and (max-width: 1200px) {
+  /* Styles for tablets in landscape mode or small desktops */
+  .testimonial-section {
+    padding: 6rem 4rem;
+    background-color: var(--white);
   }
 }

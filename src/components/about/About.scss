@@ -1,5 +1,6 @@
 .about {
-  min-height: 60vh;
+  background-color: var(--secondary-color);
+  color: var(--white);
   padding: 100px;
 
   .container {
@@ -9,13 +10,19 @@
     .content {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 40px;
 
       .left {
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
+
+        p {
+          color: var(--gray-color);
+          text-align: justify;
+          line-height: 27px;
+        }
       }
 
       .right {
@@ -27,7 +34,6 @@
         .about-images {
           width: 300px;
           height: 180px;
-          // border: 1px solid var(--primary-color);
           border-radius: 20px;
           background-color: lightcyan;
           display: flex;
@@ -39,6 +45,87 @@
             width: 300px;
             height: 180px;
             border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 0px - 575px) */
+@media (max-width: 481px) {
+  /* Styles for phones */
+  .about {
+    padding: 80px 40px;
+
+    .container {
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .left {
+          padding: 0px;
+          margin-bottom: 40px;
+        }
+
+        .right {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          .about-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 100%;
+              height: 180px;
+              border-radius: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 0px - 575px) */
+@media (min-width: 482px) and (max-width: 862px) {
+  /* Styles for phones */
+  .about {
+    padding: 120px 80px;
+
+    .container {
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .left {
+          padding: 0px;
+          margin-bottom: 40px;
+        }
+
+        .right {
+          flex: 1;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+
+          .about-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 100%;
+              height: 180px;
+              border-radius: 20px;
+            }
           }
         }
       }

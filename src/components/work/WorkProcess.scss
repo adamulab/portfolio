@@ -1,6 +1,6 @@
 .work-process-section {
   padding: 6rem 12rem;
-  background-color: var(--light-color);
+  background-color: var(--secdark-color);
 
   .work-process-container {
     display: flex;
@@ -11,9 +11,9 @@
       display: flex;
       align-items: flex-start;
       gap: 1rem;
-      border-left: 3px solid var(--secondary-color);
+      border-left: 3px solid var(--cta-color);
       padding: 1rem;
-      background: var(--white);
+      background: var(--light-color);
       border-radius: 8px;
 
       .step-number {
@@ -35,4 +35,25 @@
       }
     }
   }
+}
+
+/* Extra small devices (phones, 0px - 575px) */
+@media (max-width: 481px) {
+  /* Styles for phones */
+  .work-process-section {
+    padding: 3rem 2rem;
+  }
+}
+
+/* Small devices (tablets, 576px - 767px) */
+@media (min-width: 482px) and (max-width: 862px) {
+  /* Styles for tablets in portrait mode */
+  .work-process-section {
+    padding: 4rem 3rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px - 991px) */
+@media (min-width: 863px) and (max-width: 1200px) {
+  /* Styles for tablets in landscape mode or small desktops */
 }

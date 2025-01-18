@@ -1,14 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik+Vinyl&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+AU+SA:wght@100..400&display=swap");
 
 :root {
-  --primary-color: #8067d4;
-  --secondary-color: #f48238;
-  --important-text: #0f131a;
-  --normal-text: #4b5563;
-  --light-color: lightcyan;
-  --gray-color: #e9e5e5;
-  --white: whitesmoke;
-  --cta-color: #f78119;
+  --dark-color: #181c14;
+  --secdark-color: #27272a;
+  --light-color: #ecdfcc;
+  --cta-color: #f5c542;
+  --gray-color: #535351;
 }
 
 * {
@@ -16,8 +13,11 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 20px;
-  color: var(--normal-text);
   font-family: "Lato", serif;
+
+  body {
+    background-color: var(--dark-color);
+  }
 
   .link {
     text-decoration: none;
@@ -28,16 +28,15 @@
 h1,
 h2,
 h3 {
-  font-family: "Rubik Vinyl", serif;
+  font-family: "Playwrite AU SA", serif;
 }
 
 section {
   border-top: 1px dashed lightcyan;
-  padding: 30px 200px;
 }
 
 .sectionHeader {
-  color: var(--primaary-color);
+  color: var(--cta-color);
   font-size: 35px;
   font-weight: bold;
   text-align: center;
