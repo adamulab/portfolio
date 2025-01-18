@@ -42,6 +42,11 @@
   /* Styles for phones */
   .work-process-section {
     padding: 3rem 2rem;
+
+    .process-step {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
