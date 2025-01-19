@@ -11,7 +11,7 @@ const projectsData = {
       technologies: "Reactjs, Framer Motion",
       links: {
         demo: "https://janibaginger.com/",
-        code: "#",
+        code: "",
       },
       image: "https://i.ibb.co/d4b6fYy/janiba.png",
     },
@@ -22,7 +22,7 @@ const projectsData = {
       technologies: "Reactjs, Framer Motion",
       links: {
         demo: "https://www.nooncapitalandfinance.com/",
-        code: "#",
+        code: "",
       },
       image: "https://i.ibb.co/3TgwNTk/nooncapital.png",
     },
@@ -34,7 +34,7 @@ const projectsData = {
       technologies: "Reactjs, Framer Motion",
       links: {
         demo: "https://fivestarcollegeofhealthtech.ng/",
-        code: "#",
+        code: "",
       },
       image: "https://i.ibb.co/GcJcjFH/fivestar.png",
     },
@@ -46,7 +46,7 @@ const projectsData = {
       technologies: "Reactjs, Framer Motion",
       links: {
         demo: "https://janibaintercontinentalnetwork.com/",
-        code: "#",
+        code: "",
       },
       image: "https://i.ibb.co/RPPtWtH/jinl.png",
     },
@@ -165,14 +165,16 @@ function Projects() {
                 >
                   Live Demo
                 </a>
-                <a
-                  href={project.links.code}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  Source Code
-                </a>
+                {project.links.code && (
+                  <a
+                    href={project.links.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    Source Code
+                  </a>
+                )}
               </div>
             </div>
           ))}
