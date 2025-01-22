@@ -110,7 +110,7 @@ function Footer() {
           )}
         </div>
       </section>
-      <p>
+      <p className="copyright">
         &copy; {new Date().getFullYear()} AdamuDevLab | All right reserved |
         Creating Content for the Internet since 2012.
       </p>

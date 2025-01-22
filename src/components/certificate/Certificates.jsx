@@ -16,7 +16,7 @@ const certificates = [
   },
   {
     title: "Responsive Web Design",
-    issuer: "FreeCodeCmp",
+    issuer: "FreeCodeCamp",
     date: "February 2021",
     link: "https://www.freecodecamp.org/certification/adamudevlab/responsive-web-design",
   },
@@ -63,7 +63,7 @@ function Certificates() {
   };
   return (
     <section className="certificates-section">
-      <h2 className="sectionHeader">Certifications Obtained</h2>
+      <h2 className="sectionHeader">Certifications</h2>
       <div className="certificates-grid">
         {certificates
           .sort((a, b) => new Date(b.date) - new Date(a.date))

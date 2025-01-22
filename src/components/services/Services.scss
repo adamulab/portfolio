@@ -1,6 +1,10 @@
 .services-section {
   padding: 6rem 12rem;
-  background-color: #f9f9f9;
+  background-color: var(--light-color);
+
+  .sectionHeader {
+    color: var(--dark-color);
+  }
 
   .services-container {
     display: grid;

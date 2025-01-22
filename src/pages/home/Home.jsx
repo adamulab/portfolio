@@ -8,6 +8,7 @@ import Services from "../../components/services/Services";
 import WorkProcess from "../../components/work/WorkProcess";
 import Testimonial from "../../components/testimonial/Testimonial";
 import Certificates from "../../components/certificate/Certificates";
+import Winners from "../../components/winner/Winner";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <Services />
       <WorkProcess />
       <Testimonial />
+      <Winners />
     </div>
   );
 }

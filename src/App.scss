@@ -5,7 +5,7 @@
   --secdark-color: #27272a;
   --light-color: #ecdfcc;
   --cta-color: #f5c542;
-  --gray-color: #535351;
+  --gray-color: #91918c;
 }
 
 * {
@@ -32,7 +32,7 @@ h3 {
 }
 
 section {
-  border-top: 1px dashed lightcyan;
+  border-top: 1px dashed var(--gray-color);
 }
 
 .sectionHeader {

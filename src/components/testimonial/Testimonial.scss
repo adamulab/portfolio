@@ -2,6 +2,10 @@
   padding: 8rem 12rem;
   background-color: var(--light-color);
 
+  .sectionHeader {
+    color: var(--dark-color);
+  }
+
   .testimonials-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -65,7 +69,6 @@
   /* Styles for tablets in portrait mode */
   .testimonial-section {
     padding: 4rem 3rem;
-    background-color: var(--white);
   }
 }
 
@@ -74,6 +77,5 @@
   /* Styles for tablets in landscape mode or small desktops */
   .testimonial-section {
     padding: 6rem 4rem;
-    background-color: var(--white);
   }
 }
