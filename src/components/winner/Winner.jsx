@@ -15,7 +15,10 @@ function Winner() {
           <p>
             Participated in the 3MTT Kaduna TechForGood Hackathon, where me and
             my Team as #TeamHealthConnect won the grand price. Our solution, A
-            Centralized Patients Record Management System aim to....
+            Centralized Patients Record Management System aim to serve as a
+            secure platform that aggregates medical histories from various
+            healthcare providers, allowing patients to access their complete
+            health records in one place.
           </p>
         </div>
         <div className="content">
