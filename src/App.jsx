@@ -4,9 +4,10 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./App.scss";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
-import Courses from "./pages/courses/Courses";
-import Blog from "./pages/blog/Blog";
-import Videos from "./pages/videos/Videos";
+import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
+import Services from "./components/services/Services";
 
 function App() {
   const Layout = () => {
@@ -28,16 +29,24 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/courses",
-          element: <Courses />,
+          path: "/about",
+          element: <About />,
         },
         {
-          path: "/blog",
-          element: <Blog />,
+          path: "/skills",
+          element: <Skills />,
         },
         {
-          path: "/videos",
-          element: <Videos />,
+          path: "/projects",
+          element: <Projects />,
+        },
+        {
+          path: "/services",
+          element: <Services />,
+        },
+        {
+          path: "/contact",
+          element: <Footer />,
         },
       ],
     },

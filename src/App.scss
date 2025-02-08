@@ -19,6 +19,10 @@
     background-color: var(--dark-color);
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   .link {
     text-decoration: none;
     color: inherit;

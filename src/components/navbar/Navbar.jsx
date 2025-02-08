@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
-import {
-  FaHome,
-  FaProjectDiagram,
-  FaUser,
-  FaBars,
-  FaTimes,
-} from "react-icons/fa";
-import { FaMapLocation } from "react-icons/fa6";
+import { FaHome, FaBars, FaTimes, FaTools } from "react-icons/fa";
+import { FaCode, FaIdCard, FaLaptopCode, FaPaperPlane } from "react-icons/fa6";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,23 +43,39 @@ function Navbar() {
             to={"/about"}
             onClick={() => setIsMenuOpen(false)}
           >
-            <FaUser className="icon" />
+            <FaIdCard className="icon" />
             About
+          </Link>
+          <Link
+            className="link"
+            to={"/skills"}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <FaTools className="icon" />
+            Skills
           </Link>
           <Link
             className="link"
             to={"/projects"}
             onClick={() => setIsMenuOpen(false)}
           >
-            <FaProjectDiagram className="icon" />
+            <FaLaptopCode className="icon" />
             Projects
+          </Link>
+          <Link
+            className="link"
+            to={"/services"}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <FaCode className="icon" />
+            Services
           </Link>
           <Link
             className="link"
             to={"/contact"}
             onClick={() => setIsMenuOpen(false)}
           >
-            <FaMapLocation className="icon" />
+            <FaPaperPlane className="icon" />
             Contact
           </Link>
         </div>
